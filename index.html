@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter with Color Change</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="number-input">
+    <input type="number" id="numberInput" placeholder="Enter your number">
+    <button onclick="setCounter()">Send</button>
+  </div>
+
+  <div id="counterContainer" class="counter-container">
+    <button onclick="decrease()">-</button>
+    <span id="counter">0</span>
+    <button onclick="increase()">+</button>
+  </div>
+
+  <div class="color-picker">
+    <label for="colorPicker">Select color</label>
+    <input type="color" id="colorPicker" onchange="changeBackgroundColor()">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
